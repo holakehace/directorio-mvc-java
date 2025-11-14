@@ -40,7 +40,7 @@ public class InventarioVista {
 
         int cantidad = 0;
         while (true) {
-            System.out.print("Cantidad (entero): ");
+            System.out.print("Cantidad: ");
             String cantidadLine = scanner.nextLine().trim();
             try {
                 cantidad = Integer.parseInt(cantidadLine);
@@ -50,13 +50,13 @@ public class InventarioVista {
                 }
                 break;
             } catch (NumberFormatException e) {
-                System.out.println("Entrada inválida. Ingrese un número entero.");
+                System.out.println("Entrada inválida. Ingrese un número.");
             }
         }
 
-        double precio = 0.0;
+        double precio = 0;
         while (true) {
-            System.out.print("Precio unitario (ej: 12.50): ");
+            System.out.print("Precio unitario (ej: 2000): ");
             String precioLine = scanner.nextLine().trim();
             try {
                 precio = Double.parseDouble(precioLine);
@@ -66,7 +66,7 @@ public class InventarioVista {
                 }
                 break;
             } catch (NumberFormatException e) {
-                System.out.println("Entrada inválida. Ingrese un número decimal válido.");
+                System.out.println("Entrada inválida. Ingrese un precio valido.");
             }
         }
 

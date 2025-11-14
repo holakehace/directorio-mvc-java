@@ -1,4 +1,3 @@
-
 package Controlador;
 
 import Modelo.BaseDeDatos;
@@ -46,12 +45,12 @@ public class ControladorInventario
                     if (eliminado) {
                         vista.mostrarMensaje("Producto eliminado correctamente.");
                     } else {
-                        vista.mostrarMensaje("No se encontró el producto. No se eliminó nada.");
+                        vista.mostrarMensaje("No se encontró el producto.");
                     }
                     break;
                 case 5:
                     salir = true;
-                    vista.mostrarMensaje("Saliendo... ¡Hasta luego!");
+                    vista.mostrarMensaje("Saliendo...");
                     break;
                 default:
                     vista.mostrarMensaje("Opción inválida. Intente de nuevo.");
