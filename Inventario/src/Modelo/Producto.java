@@ -7,13 +7,15 @@ public class Producto
     private String sku;
     private int cantidad;
     private double precio;
-
-    public Producto(String nombre, String sku, int cantidad, double precio) 
+    private String color;
+    
+    public Producto(String nombre, String sku,String color, int cantidad, double precio) 
     {
         this.nombre = nombre;
         this.sku = sku;
         this.cantidad = cantidad;
         this.precio = precio;
+        this.color = color;
     }
 
     public String getNombre() 
@@ -29,11 +31,22 @@ public class Producto
     {
         return sku;
     }
+    
+   
     public void setSku(String sku) 
     {
         this.sku = sku;
     }
 
+     public String getColor()
+    {
+       return color;
+    }
+     
+     public void setcolor()
+     {
+      this.color = color;
+      }
     public int getCantidad() 
     {
         return cantidad;
